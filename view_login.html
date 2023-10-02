@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?>
+  <title>Login</title>
+</head>
+<body>
+  <h1>ログイン</h1>
+  <form id="loginForm" method="post" action="<?= getAppUrl() ?>">
+    <label for="company_id">企業ID:</label>
+    <input type="text" id="company_id" name="company_id" required><br><br>
+
+    <label for="employee_id">従業員ID:</label>
+    <input type="text" id="employee_id" name="employee_id" required><br><br>
+
+    <label for="password">パスワード:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="submit" value="ログイン">
+  </form>
+
+  <? var hadLoginError = checkLoginError(); ?>
+  <? if(hadLoginError) { ?>
+    <p class = "error-message">ログインに失敗しました</p>
+  <? } ?>
+
+  <!-- キャラクターとの会話を表示 -->
+  <div class='image-and-text'>
+  <div class='arrow_box'><?= randomTextFromCharacter("login") ?></div><br>
+  <!-- 画像 -->
+  <img src="https://drive.google.com/uc?id=1C_Oe7R0ij1sJOoahfnsLI3fjuIsd5ce1" width="30" height="30" alt="がぞう">  
+  </div>  
+
+</body>
+</html>

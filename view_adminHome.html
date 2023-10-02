@@ -1,0 +1,67 @@
+<!-- 管理者のホーム画面 -->
+<!-- 従業員の勤怠のログを見る -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <base target="_top">
+  <?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?>
+  <title>Login</title>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+        <h1>管理者用ホーム</h1>
+        <nav>
+            <ul>
+              <? var current_user_id = getActiveUserId() ?> <!-- user_idの取得 -->
+              <li><a href="<?= getAppUrl() ?>?page=view_adminHome&user_id=<?= current_user_id ?>">打刻データ一覧</a></li>
+              <li><a>連絡・相談</a></li>
+              <li><a href="<?= getAppUrl() ?>?page=view_adminClockIn&user_id=<?= current_user_id ?>">自身の勤怠を登録</a></li>
+              <li><a href="<?= getAppUrl() ?>">ログアウト</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-message">
+      <? var user_id = getActiveUserId() ?> <!-- user_idの取得 -->
+      <? var company_name = getUserInfo(user_id, "company_name") ?> <!-- company_nameの取得 -->
+      <? var user_name = getUserInfo(user_id, "user_name") ?> <!-- user_nameの取得 -->
+      <?= company_name ?>
+      勤怠管理者の
+      <?= user_name ?>
+      さん、こんにちは！
+    </div>
+    <div>
+      <h3>打刻データ一覧</h3>
+      <table border="2">
+        <thead>
+          <th class="table-title">従業員名</th>
+          <th class="table-title">種別</th>
+          <th class="table-title">日時</th>
+        </thead>
+        <tbody>
+          <?
+          var user_id = getActiveUserId(); <!-- user_idの取得 -->
+          console.log("user_id:"+user_id);
+          var record = getTimeCards(user_id);
+          console.log(record);
+          // 勤怠情報の配列の繰り返し処理
+          for (var i = 0; i <= record.length - 1; i++) {
+          ?>
+          <tr>
+            <th class="table">
+              <?= record[i]['name'] ?>
+            </th>
+            <th class="table">
+              <?= record[i]['type'] ?>
+            </th>
+            <th class="table">
+              <?= record[i]['date'] ?>
+            </th>
+          </tr>
+          <? } ?>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

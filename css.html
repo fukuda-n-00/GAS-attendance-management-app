@@ -1,0 +1,194 @@
+<style>
+  body {
+    /* background-color: #DCE8FF; */
+    background-color: #EEFFFF;
+    font-family: Roboto, 'Noto Sans JP', sans-serif;
+    margin: 30px;
+    color: #2864F0;
+  }
+  table {
+    font-family: Roboto, 'Noto Sans JP', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .btn {
+    font-family: Roboto, 'Noto Sans JP', sans-serif;
+    margin: 20px 0;
+    width: 150px;
+  }
+  .btn-frame {
+    text-align: center;
+  }
+  div span {
+    color: #6E6B6B;
+  }
+  h3 {
+    color: #F07882;
+  }
+  .btn-frame{
+    padding: 50px;
+    text-align: center; /* 水平方向に中央寄せ */
+    color: #24292e;
+  }
+  button{
+    /* background-color: #6E6B6B;
+    color: #DCE8FF;
+    transition: background-color 0.3s, color 0.3s; アニメーション効果を追加 */
+  }
+  button:hover {
+    /* background-color: #F07882;
+    color: #2864F0; */
+  }
+  button{
+    text-align: center;
+    margin-left:30px;
+    matgin-right:30px;
+  }
+  button{
+      width: 200px;
+      background-color: #24292e;
+      color: #fff;
+      padding: 15px 20px;
+      border: solid 1px #24292e;
+  }
+  button:hover {
+      background: #FFFFFF;
+      color: #24292e;
+  }
+  form{
+    padding: 10px 0px;
+  }
+  .error-message{
+    color: #F07882;
+  }
+  li{
+    list-style: none;
+  }
+  /* ヘッダー */
+  header{
+      max-width: 100%;
+      background-color: #FFFF7F;
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      padding: 0 2%;
+      align-items: center;
+      position: sticky;
+      top: 0;
+  }
+  header ul{
+      display: flex;
+  }
+  header li{
+      margin-left: 30px;
+  }
+  .login-message{
+    padding: 0px 0px 20px 0px;
+  }
+  table {
+    border-collapse: collapse; /* セルの境界を折りたたむ */
+    width: 100%; /* テーブル幅を100%に設定 */
+  }
+
+  th, td {
+    border: 2px solid black; /* セルの境界線の太さとスタイルを指定 */
+    padding: 8px; /* セル内の余白を指定 */
+    text-align: center; /* セル内のテキストを中央揃えにする（任意） */
+  }
+
+  .table-title {
+    background-color: #FFFFCC; /* タイトル行の背景色を設定 */
+  }
+
+  .table{
+    background-color: #FFFFEF;
+    color: #6E6B6B;
+  }
+  .image-and-text {
+    /* text-align: right; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px; /* 上側の余白を追加 */
+  }
+
+  .arrow_box {
+    background: #FFFFFF;
+    padding: 10px;
+    text-align: left;
+    border: 5px solid #6E6B6B;
+    color: #6E6B6B;
+    font-size: 15px;
+    font-weight: bold;
+  }
+.arrow_box{
+    position:relative;
+    width:230px;
+    height:100px;
+    background:#FFFFFF;
+    padding:10px;
+    text-align:left;
+    border:5px solid #6E6B6B;
+    color:#6E6B6B;
+    font-size:15px;
+    font-weight:bold;
+}
+  .arrow_box:after,.arrow_box:before{
+      border: solid transparent;
+      content:'';
+      height:0;
+      width:0;
+      pointer-events:none;
+      position:absolute;
+      top:100%;
+      left:50%;
+  }
+  .arrow_box:after{
+      border-color: rgba(238, 238, 238, 0);
+      border-top-width:10px;
+      border-bottom-width:10px;
+      border-left-width:20px;
+      border-right-width:20px;
+      margin-left: -20px;
+      border-top-color:#FFFFFF;
+  }
+  .arrow_box:before{
+      border-color: rgba(63, 114, 155, 0);
+      border-top-width:12px;
+      border-bottom-width:12px;
+      border-left-width:25px;
+      border-right-width:25px;
+      margin-left: -25px;
+      margin-top: 5px;
+      border-top-color:#6E6B6B;
+  }
+  img{
+    width: 200px;
+    height: 200px;
+  }
+  .image-and-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* 垂直方向に要素を配置 */
+  }
+
+.arrow_box {
+  background: #FFFFFF;
+  padding: 10px;
+  display: flex;
+  align-items: center; /* 垂直方向の中央寄せ */
+  justify-content: center; /* 水平方向の中央寄せ */
+  height:100px;
+  border: 5px solid #6E6B6B;
+  color: #6E6B6B;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px; /* 吹き出しと画像の間にスペースを追加 */
+  }
+
+
+  
+</style>
