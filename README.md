@@ -1,7 +1,6 @@
 # GAS-attendance-management-app
 
 初めてGoogle App Scriptを使って、勤怠管理アプリを作成しました。
-いわゆる写経ではなく、自作で
 改善点があればご指摘いただけますと幸いです。
 
 ## 実装した機能
