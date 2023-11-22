@@ -22,3 +22,7 @@
 ~~機能が一通り完成したら、データベースをスプレッドシートからMySQLやSQLiteのようなデータベース管理システムに移行したい。それに伴い、使用する技術(言語等)も見直す予定。~~<br>
 HTML/CSSとPHPとMySQLを用いたwebアプリとしてブラッシュアップ中。事前の設計の甘さによって読みにくいコードになってしまった反省も活かして、まずは設計を見直してから本GASアプリで実装しきれなかった機能を追加予定。<br>
 リポジトリ：https://github.com/fukuda-n-00/web-attendance-management-app.git
+
+## おまけ
+このアプリ作成によってGASでのアプリの作り方の理解が進んだため、新たにアプリケーションを作ることもできました
+リポジトリ：https://github.com/fukuda-n-00/GAS-shinyPokedex-share-app.git
