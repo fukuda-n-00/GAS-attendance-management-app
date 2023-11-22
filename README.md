@@ -24,5 +24,5 @@ HTML/CSSとPHPとMySQLを用いたwebアプリとしてブラッシュアップ�
 リポジトリ：https://github.com/fukuda-n-00/web-attendance-management-app.git
 
 ## おまけ
-このアプリ作成によってGASでのアプリの作り方の理解が進んだため、新たにアプリケーションを作ることもできました
+このアプリ作成によってGASでのアプリの作り方の理解が進んだため、新たにアプリケーションを作ることもできました<br>
 リポジトリ：https://github.com/fukuda-n-00/GAS-shinyPokedex-share-app.git
