@@ -1,16 +1,15 @@
 // グローバル変数として定義
-var activeUserId = 1;
+var activeUserId;
 var hadLoginError = false;
 /**
  * ページを開いた時に最初に呼ばれるルートメソッド
  */
 function doGet(e) {
-
-  console.log("doGetを呼び出した");
   activeUserId = e.parameter.user_id;
   // if(e.parameter.user_id != undefined){
   //   activeUserId = e.parameter.user_id;
   // }
+
   // ログインページのHTMLを読み込み、表示
   let page = e.parameter.page;
   if(!page){
@@ -344,21 +343,21 @@ function randomTextFromCharacter(loginFrag) {
     var randomIndex = Math.floor(Math.random() * text.length);  // ランダムなインデックスを生成
     return text[randomIndex]; // ランダムなテキストを返す
   }
-  // 時間帯を取得
-  function getTimeFrame(){
-    var datetime = new Date();
-    var currentHour = datetime.getHours();
-
-    if(currentHour >= 5 && currentHour < 11){
-      return "asa";
-    }
-    else if(currentHour >= 11 && currentHour < 18){
-      return "hiru";    
-    }
-    else{
-      return "yoru";    
-    }
-  }  
-
 }
+
+// 時間帯を取得
+function getTimeFrame(){
+  var datetime = new Date();
+  var currentHour = datetime.getHours();
+
+  if(currentHour >= 5 && currentHour < 11){
+    return "asa";
+  }
+  else if(currentHour >= 11 && currentHour < 18){
+    return "hiru";    
+  }
+  else{
+    return "yoru";    
+  }
+}  
 

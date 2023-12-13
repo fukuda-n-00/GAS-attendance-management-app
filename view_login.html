@@ -6,7 +6,14 @@
   <title>Login</title>
 </head>
 <body>
-  <h1>ログイン</h1>
+  <header>
+    <h1>ログイン</h1>
+        <nav>
+            <ul>
+              <li><a href="<?= getAppUrl() ?>?page=view_signup">企業サインアップ</a></li>
+            </ul>          
+        </nav>    
+  </header>
   <form id="loginForm" method="post" action="<?= getAppUrl() ?>">
     <label for="company_id">企業ID:</label>
     <input type="text" id="company_id" name="company_id" required><br><br>

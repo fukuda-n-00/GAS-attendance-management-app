@@ -24,10 +24,21 @@
       <? var user_id = getActiveUserId() ?> <!-- user_idの取得 -->
       <? var company_name = getUserInfo(user_id, "company_name") ?> <!-- company_nameの取得 -->
       <? var user_name = getUserInfo(user_id, "user_name") ?> <!-- user_nameの取得 -->
+      <? var time_frame = getTimeFrame() ?> <!-- 時間帯を取得 -->
       <?= company_name ?>
       の
       <?= user_name ?>
-      さん、こんにちは！
+      さん、
+      <? if(time_frame == "asa"){ ?>
+        おはようございます！
+      <? } ?>
+      <? if(time_frame == "hiru"){ ?>
+        こんにちは！
+      <? } ?>
+      <? if(time_frame == "yoru"){ ?>
+        こんばんは！
+      <? } ?>
+
     </div>
 
     <!-- 必要なボタンと現在の状態を表示 -->
