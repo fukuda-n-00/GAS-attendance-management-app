@@ -206,7 +206,7 @@ function getCondition(user_id){
   }
 
   var ss = SpreadsheetApp.getActive();
-  var sheet = ss.getSheetByName("Condition");
+  var sheet = ss.getSheetByName("UserCondition");
   var data = sheet.getDataRange().getValues();
 
   var condition = data[user_id][1];
