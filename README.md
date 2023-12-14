@@ -9,6 +9,7 @@
 - 打刻
 - 打刻履歴の閲覧(管理者)
 - キャラクター(つばめさん)がひとことおしゃべりしてくれる
+  - 時間帯や勤務の状態に合わせたあいさつ・おうえんをしてくれる
 
 ## データベースサンプル
 https://docs.google.com/spreadsheets/d/1c6Ka8cryuBHM335R_kPBuWDs19WENTge1YfVKEnCV8M/edit?usp=sharing <br>
@@ -20,7 +21,7 @@ https://docs.google.com/spreadsheets/d/1c6Ka8cryuBHM335R_kPBuWDs19WENTge1YfVKEnC
 - 見た目やUIを整える
 - ユーザー追加機能
 - キャラクターとの簡単なおしゃべり機能
-  - 時間帯や勤務の状態に合わせたあいさつ・おうえんをしてくれる
+  - もっと状態にに合わせた、バラエティ豊かなあいさつ・おうえんをしてくれる
   - キャラクターが操作方法を案内してくれる
   - 正確な打刻を続けることでキャラクターに変化が現れる（成長したり、親密度が上がったり）
 
